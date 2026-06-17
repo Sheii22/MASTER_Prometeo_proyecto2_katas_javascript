@@ -26,6 +26,7 @@ console.log(altura);
 let longitud = 10;
 console.log(longitud);
 
+
 // 4. Calcula la suma:
 
 // Crea una variable llamada suma y asigna el valor de altura + longitud.
