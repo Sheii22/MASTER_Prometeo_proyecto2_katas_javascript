@@ -36,7 +36,7 @@ function averageWord(list) {
         // . . . lo sume"
         suma = suma + element;
     }
-    else{  // "y de lo contrario(String) . . . 
+    else{  // "y de lo contrario(string) . . . 
 
         // . . . cuente la longitud del string(element.length) y lo sume.""
         suma = suma + element.length;
