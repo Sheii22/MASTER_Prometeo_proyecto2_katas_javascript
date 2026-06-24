@@ -22,6 +22,7 @@ const words = [
   'sleep',
   'code'
 ];
+
 function repeatCounter(list) {
 
     /* reduce() = Va recorriendo el array y va “acumulando” un resultado.

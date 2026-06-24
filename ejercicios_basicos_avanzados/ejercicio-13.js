@@ -18,6 +18,7 @@ const names = [
   'Jessica',
   'Marc'
 ];
+
 function nameFinder(nameList, name) {
   
     // 1. Recorrer el array

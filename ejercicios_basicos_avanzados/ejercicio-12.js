@@ -21,6 +21,7 @@ const duplicates = [
   'pasta',
   'soda'
 ];
+
 function removeDuplicates(list) {
   
     // "(pista) generar un nuevo array y devolverlo"
