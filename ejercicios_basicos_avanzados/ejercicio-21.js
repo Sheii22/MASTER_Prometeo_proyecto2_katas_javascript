@@ -1,7 +1,5 @@
 // Ejercicio 21
 
-
-
 /* Usa un bucle y dos condiciones para imprimir por consola el nombre de los usuarios que sean menor de edad precedidos del texto "Usuarios menores de edad:" y otro que imprima a los usuarios mayores de edad, precedido del texto "Usuarios mayores de edad:". */
 
 const users = [
@@ -12,23 +10,45 @@ const users = [
   { name: "Khamala", years: 16 },
 ];
 
-/* Bucle for:
-   + let i = 0  ......inicializo el índice que recorrerá el array
-   + i < users.length  ......le digo al bucle for que recorra el array 
-                                 hasta la longitud de éste
-   + i++  ......que el índice avance una posición del array en cada
-                    vuelta */
-for(let i = 0; i < users.length; i++){
+function minorOrAdult(pUsers){
 
-    /* Imprimir por consola el nombre de los usuarios que sean menor de edad precedidos del texto "Usuarios menores de edad:" */
-    if(users[i].years < 18){
+    //Creo un array para guardar los nombres de los usuarios menores de edad
+    const minorUsers = [];
+    //Creo un array para guardar los nombres de los usuarios mayores de edad
+    const adultUsers = [];
 
-        console.log("Usuarios menores de edad:" + users[i].name);
+    // Usa un bucle
+    for(const element of pUsers){
+        
+        // Menor de edad
+        if(element.years < 18){
+
+            minorUsers.push(element.name);
+        }
+        // mayores de edad:  element.years >= 18
+        else{
+
+            adultUsers.push(element.name);
+        }
     }
-
-    /* Imprimir a los usuarios mayores de edad, precedido del texto "Usuarios mayores de edad:" */
-    if(users[i].years >= 18){
-
-        console.log("Usuarios mayores de edad:" + users[i].name);
+    // Si el array con los usuarios menores de edad no está vacío:
+    if(!minorUsers.empty){
+     
+        // Imprimir por consola el nombre de los usuarios
+        console.log("Usuarios menores de edad: ", minorUsers);
+    }
+    // Si el array con los usuarios mayores de edad no está vacío:
+    if(!minorUsers.empty){
+     
+        // Imprimir por consola el nombre de los usuarios
+        console.log("Usuarios mayores de edad: ", adultUsers);
     }
 }
+
+
+// PRUEBA:
+
+minorOrAdult(users);
+/* Usuarios menores de edad:  [ 'Natasha', 'Khamala' ]
+   Usuarios mayores de edad:  [ 'Tony', 'Peter', 'Bruce' ]
+   */ 
